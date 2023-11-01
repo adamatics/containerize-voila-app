@@ -11,14 +11,22 @@ First, open a terminal and make sure that the directory you are in is the cloned
 The argument `-t logs-analytics:1.0` specifies the name and tag to use for the built container image, and you can specify it as you wish. The only requirement is that a container image with this name does not already exist on your local computer, as this will cause an error, and that the name follows the [Open Container Initiative (OCI) naming convention](https://github.com/containers/image/blob/main/docker/reference/regexp.go).
 
 ## Add metadata
-Adding metadata also pushes the image to a central storage location.
+Once the image building process is complete, you will have the container image available in your Lab on the AdaLab platform. One ways to view the container image file is with this command in a terminal, which can be executed from any location:
 
-choose lab since the image was built on your local compute resource
+```docker images```
+
+The next step is to add metadata to the container image, making it easier to find and manage. This also pushes the container image to a central storage location, making the app available for other users. You do this by heading to the Container Metadata page.
+
+Next, you simply wait a few minutes for the publishing process to complete. Click the **Refresh** button at the top of the Container Metadata page to check whether the publishing process finished. You can also watch the logs to follow along with the build process.
+
 
 ## Deploy app
+Once the Container Metadata publishing process finished successfully, an option to deploy the container image as an app will appear in the triple dot menu for the Container Metadata entry. Click this to open a dialog box in which you can fill in the details about the app, such as the name you want it to have in the URL the app will be available at. You can also specify other settings such as resource usage, environment variables, and the startup command. 
 
 
 ## Troubleshooting
+This section describes how to fix various error scenarios.
+
 ### Running into the 404 page even after fixing bug
 Try to clear cookies and site data in the browser for the AdaLab site, and then make sure you log back in before trying again.
 
