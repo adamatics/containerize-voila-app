@@ -24,7 +24,7 @@ RUN poetry config virtualenvs.create false
 RUN poetry install --only main
 
 COPY logs_analytics.ipynb .
-COPY access.log .
+COPY server-access-data.log .
 
 RUN jupyter trust logs_analytics.ipynb
 
