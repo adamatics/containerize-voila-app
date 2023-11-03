@@ -63,4 +63,4 @@ voila basics.ipynb --no-browser --port=8080 --Voila.ip=0.0.0.0 --Voila.base_url=
 - Check that there is a trailing slash ("/") in the ```--Voila.base_url``` argument , as in the example Dockerfile in this repository: ```"--Voila.base_url=/apps/logs-analytics/"```.
 
 ### The Voila spinner appears, but remains at the last cell without rendering the app
-Make sure that you specified the Voila.base_url parameter so the app and its contents are located in the expected location.
+Make sure that you specified the ```Voila.base_url``` parameter so the app and its contents are located in the expected location.
