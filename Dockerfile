@@ -30,13 +30,15 @@ RUN jupyter trust logs_analytics.ipynb
 
 EXPOSE 8080
 
-# Use the below two lines to avoid running the container with super user privileges to prevent privilege-escalation-attacks (see https://docs.docker.com/engine/security/userns-remap/).
+# Use the below two lines to avoid running the container with super user privileges to 
+# prevent privilege-escalation-attacks (see https://docs.docker.com/engine/security/userns-remap/).
 # See https://docs.docker.com/engine/reference/builder/#user for more on the USER directive.
 RUN useradd -ms /bin/bash app_runner
 USER app_runner
 
-# If you change your mind about the app name, the below startup command can be overwritten in the Advanced Settings when deploying an app.
-# E.g., if you wanted the app to be found at a /apps/interactive-log/ instead of /apps/logs-analytics/, you could use the following
-# startup command:
+# If you change your mind about the app name, the below startup command can be overwritten in the 
+# Advanced Settings when deploying an app.
+# E.g., if you wanted the app to be found at /apps/interactive-log/ instead 
+# of /apps/logs-analytics/, you could use the following startup command:
 # voila logs_analytics.ipynb --no-browser --port=8080 --Voila.ip=0.0.0.0 --Voila.base_url=/apps/interactive-log/
 CMD ["voila", "logs_analytics.ipynb", "--no-browser", "--port=8080", "--Voila.ip=0.0.0.0", "--Voila.base_url=/apps/logs-analytics/"]

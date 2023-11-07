@@ -64,3 +64,6 @@ voila basics.ipynb --no-browser --port=8080 --Voila.ip=0.0.0.0 --Voila.base_url=
 
 ### The Voila spinner appears, but remains at the last cell without rendering the app
 Make sure that you specified the ```Voila.base_url``` parameter so the app and its contents are located in the expected location.
+
+# References
+The notebook and sample data were copied from https://github.com/bqplot/bqplot-gallery.git (BSD-3-Clause license as of October 31st 2023).
