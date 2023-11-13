@@ -47,7 +47,14 @@ The argument you supplied in the start command in the Dockerfile for ```--Voila.
     <img class="no-shadow" src="graphics/deploy_app_dialog.png"  style="margin: 0px 5px 50px 0px; center;" width="1000px"/>
 </a>
 
-So, for the example in this repository where we pass ```"--Voila.base_url=/apps/logs-analytics/"``` in the startup command in the Dockerfile, we must specify "logs-analytics/" in the **App URL** field.
+So, for the example in this repository where we pass ```"--Voila.base_url=/apps/logs-analytics/"``` in the startup command in the Dockerfile, we must specify "logs-analytics" in the **App URL** field.
+
+## Parameters accepted by the app
+The logs_analytics.ipynb notebook, which defines the Voilá app, includes code that can parse two parameters given as part of the URL. These two parameters are `username` and `desired-greeting` and define the message displayed at the top of the app. They are specified as follows:
+
+```https://adalab.adamatics.com/apps/logs-analytics/?desired-greeting=good_morning&username=Your_Name```
+
+Where underscores are turned into spaces in the greeting and each word is capitalized. Their default values are "Hello" and "User", respectively.
 
 ## Troubleshooting
 This section describes how to fix various error scenarios.
