@@ -4,7 +4,7 @@ This repository contains files that define a Voilá app (`access.log`, `poetry.l
 In the following sections, we list the steps required to deploy a Voilá app as a containerized stand-alone app on [AdaLab](https://adamatics.com/index.php/platform-2/).
 
 ## Build the container image
-First, open a terminal and make sure that the directory you are in is the cloned repository `containerize-voila-app`. Then, from the terminal, build the container image with the below command:
+First, open a terminal and make sure that the directory you are in is the folder that the repository was cloned into. Then, from the terminal, build the container image with the below command:
 
 ```docker build -t logs-analytics:1.0 .```
 
