@@ -16,7 +16,7 @@ The argument `-t logs-analytics:1.0` specifies the name and tag to use for the b
 </a>
 
 ## Add metadata
-Once the image building process is complete, you will have the container image available in your Lab on the AdaLab platform. One ways to view the container image file is with this command in a terminal, which can be executed from any location:
+Once the image building process is complete, you will have the container image available in your Lab on the AdaLab platform. One way to view the container image file is with this command in a terminal, which can be executed from any location:
 
 ```docker images```
 
@@ -35,7 +35,7 @@ Next, you simply wait a few minutes for the publishing process to complete. Clic
 
 
 ## Deploy app
-Once the Container Metadata publishing process finished successfully, an option to deploy the container image as an app will appear in the triple dot menu for the Container Metadata entry. Click this to open a dialog box in which you can fill in the details about the app, such as the name you want it to have in the URL the app will be available at. You can also specify other settings such as resource usage, environment variables, and the startup command. The **Strip Prefix** checkbox must be unchecked for the containerized Voilá app to deploy successfully, as shown below:
+Once the Container Metadata publishing process finished successfully, an option to deploy the container image as an app will appear in the triple dot menu for the Container Metadata entry. Click this to open a dialog box in which you can fill in the details about the app, such as the name you want it to have and the URL the app will be available at. You can also specify other settings such as resource usage, environment variables, and the startup command. The **Strip Prefix** checkbox must be unchecked for the containerized Voilá app to deploy successfully, as shown below:
 
 <a href="graphics/deploy_app.gif" target="_blank">
     <img class="no-shadow" src="graphics/deploy_app.gif"  style="margin: 0px 5px 50px 0px; center;" width="1000px"/>
