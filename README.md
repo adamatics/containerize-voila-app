@@ -1,7 +1,7 @@
 # Containerizing and deploying a Voilá app on AdaLab
 This repository contains files that define a Voilá app (`access.log`, `poetry.lock`, `pyproject.toml`, and `logs_analytics.ipynb`) and a Containerfile (`Dockerfile`) that specifies the build steps to build a container image for the Voilá app.
 
-In the following sections, we list the steps required to deploy a Voilá app as a containerized stand-alone app on [AdaLab](https://adamatics.com/index.php/platform-2/).
+In the following sections, we list the steps required to deploy a Voilá app as a containerized stand-alone app on version 1.2.x of [AdaLab](https://adamatics.com/index.php/platform-2/).
 
 ## Build the container image
 First, open a terminal and make sure that the directory you are in is the folder that the repository was cloned into. Then, from the terminal, build the container image with the below command:
